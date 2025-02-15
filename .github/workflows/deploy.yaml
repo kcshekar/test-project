@@ -62,4 +62,4 @@ jobs:
         sed -i "s|us-central1-docker.pkg.dev/PROJECT_ID/REPOSITORY/IMAGE:TAG|$REGION-docker.pkg.dev/$PROJECT_ID/$GAR_REPOSITORY/$IMAGE:$GITHUB_SHA|g" deployment.yaml
         kubectl apply -f deployment.yaml
         kubectl apply -f service.yaml
-        kubectl rollout status deployment/nodejs-app-deployment
+        kubectl rollout status deployment/nodeapp-deployment
