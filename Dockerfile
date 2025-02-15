@@ -1,6 +1,6 @@
-FROM --platform=arm64 node:lts-alpine
+FROM node:18-alpine
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package*.json ./
 
