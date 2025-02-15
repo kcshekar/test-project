@@ -17,6 +17,5 @@ spec:
       containers:
       - name: nodeapp
         image: us-central1-docker.pkg.dev/PROJECT_ID/REPOSITORY/IMAGE:TAG # Placeholder: Update with your values in the workflow
-        imagePullPolicy: Never
         ports:
         - containerPort: 3000
